@@ -1,22 +1,43 @@
 .container-notif {
   height: 30px;
-  background-color: #dae8fc; /* Warna latar biru pucat sesuai gambar */
+  background-color: #dae8fc;
+  /* Warna latar biru pucat sesuai gambar */
   text-align: center;
   font-size: 8pt;
   color: #333;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2); /* Shadow lembut */
-  border-radius: 10px; /* Membuat sudut membulat */
-  transition: box-shadow 0.3s ease; /* Efek transisi halus */
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  /* Shadow lembut */
+  border-radius: 10px;
+  /* Membuat sudut membulat */
+  transition: box-shadow 0.3s ease;
+  /* Efek transisi halus */
 }
+
 .container-notif:hover {
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4); /* Shadow saat hover */
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
+  /* Shadow saat hover */
 }
+
 .header-menu:after {
   content: "";
   display: block;
-  width: 100%; /* Panjang garis (sesuaikan) */
-  height: 1px; /* Ketebalan garis */
-  background-color: #f0f3f7; /* Warna garis */
+  width: 100%;
+  /* Panjang garis (sesuaikan) */
+  height: 1px;
+  /* Ketebalan garis */
+  background-color: #696cff;
+  /* Warna garis */
+}
+
+.header-menu:before {
+  content: "";
+  display: block;
+  width: 100%;
+  /* Panjang garis (sesuaikan) */
+  height: 1px;
+  /* Ketebalan garis */
+  background-color: #696cff;
+  /* Warna garis */
 }
 
 .app {
@@ -82,4 +103,8 @@
 
 .message-input button {
   padding: 10px;
+}
+
+.navbar-brand>.logo {
+  width: 50px;
 }

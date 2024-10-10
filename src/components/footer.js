@@ -4,7 +4,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <footer className="bg-dark text-white text-center p-3">
-      <p>© {year} Your Company</p>
+      <p>© {year} Why Apps</p>
     </footer>
   );
 };

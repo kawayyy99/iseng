@@ -49,23 +49,24 @@ const App = () => {
   };
   return (
     <>
-    <HeadInject />
-    <Header />
-    <div className="app">
-      <div className="sidebar">
-        <ChatList users={users} selectUser={selectUser} />
+      <HeadInject />
+      <Header />
+      <div className="app">
+        <div className="sidebar">
+          <ChatList users={users} selectUser={selectUser} />
+        </div>
+        <div className="main-chat">
+          {selectedUser ? (
+            <>
+              <ChatBubble messages={messages} />
+              <TextInput sendMessage={sendMessage} />
+            </>
+          ) : (
+            <p>Select a user to start chatting</p>
+          )}
+        </div>
       </div>
-      <div className="main-chat">
-        {selectedUser ? (
-          <>
-            <ChatBubble messages={messages} />
-            <TextInput sendMessage={sendMessage} />
-          </>
-        ) : (
-          <p>Select a user to start chatting</p>
-        )}
-      </div>
-    </div>
+      <Footer />
     </>
   );
 };
